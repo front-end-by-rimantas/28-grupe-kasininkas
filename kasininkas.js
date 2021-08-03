@@ -8,11 +8,11 @@ async function kasininkas(price, cash) {
 
     let answer = '';
     if (total < price) {
-        answer = 'Nepakanka pinigu!';
+        answer = 'Nepakanka pinigu!\n';
     } else if (total === price) {
-        answer = 'Aciu, jog pirkote!';
+        answer = 'Aciu, jog pirkote!\n';
     } else {
-        answer = `Aciu, jog pirkote! Stai jusu graza - ${total - price} pinigu!`;
+        answer = `Aciu, jog pirkote! Stai jusu graza - ${total - price} pinigu!\n`;
     }
 
     return new Promise((resolve, reject) => {

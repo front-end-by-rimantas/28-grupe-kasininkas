@@ -16,4 +16,13 @@ const kasininkas = require('./kasininkas');
     // b) kaina: 100; kupiuros: [20, 50, 20, 10, 5, 5]
     // c) kaina: 100; kupiuros: [50, 20, 10, 5, 5, 10]
     // Po kiekvieno iskvietimo, privalu isspausdinti kasininko atsakymus.
+
+    const pirmas = await kasininkas(100, [20, 50]);
+    console.log(pirmas);
+
+    const antras = await kasininkas(100, [20, 50, 20, 10, 5, 5]);
+    console.log(antras);
+
+    const trecias = await kasininkas(100, [50, 20, 10, 5, 5, 10]);
+    console.log(trecias);
 })();
